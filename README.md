@@ -109,19 +109,6 @@ AgroConnect/
    # Open frontend/index.html in your web browser
    ```
 
-## 📸 Screenshots
-
-<div align="center">
-
-### Disease Detection Interface
-<img src="frontend/assets/images/diseases/ls_1.jpg" width="250" alt="Leaf Spot Disease">
-
-### Common Wheat Diseases
-<img src="frontend/assets/images/diseases/crr_1.jpg" width="250" alt="Crown Rot Disease">
-<img src="frontend/assets/images/diseases/00011.jpg" width="250" alt="Disease Detection">
-
-</div>
-
 ## 🌟 Key Features in Action
 
 ### 1. Upload & Detect 📸
