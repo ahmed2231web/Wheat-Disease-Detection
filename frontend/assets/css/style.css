@@ -1,0 +1,245 @@
+/* Main Styles */
+:root {
+  --primary-color: #4caf50;
+  --primary-dark: #388e3c;
+  --primary-light: #c8e6c9;
+  --secondary-color: #ff9800;
+  --text-color: #333;
+  --light-text: #fff;
+  --border-color: #ddd;
+  --error-color: #f44336;
+  --success-color: #4caf50;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header & Navigation */
+.navbar {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--light-text) !important;
+}
+
+.nav-link {
+  color: var(--light-text) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--primary-light) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--primary-light);
+  padding: 80px 0;
+}
+
+.hero-section h1 {
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border-radius: 8px 8px 0 0 !important;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Forms */
+.form-control {
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 1px solid var(--border-color);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Disease Detection */
+.upload-container {
+  border: 2px dashed var(--primary-color);
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-container:hover {
+  background-color: var(--primary-light);
+}
+
+.upload-icon {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Chat Section */
+.chat-container {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: var(--primary-light);
+  margin-left: auto;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+  margin-right: auto;
+}
+
+.message-time {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Results Section */
+.result-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.disease-name {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.confidence {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.high-confidence {
+  color: var(--success-color);
+}
+
+.medium-confidence {
+  color: var(--secondary-color);
+}
+
+.low-confidence {
+  color: var(--error-color);
+}
+
+/* History Section */
+.history-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.history-item:hover {
+  background-color: var(--primary-light);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: var(--light-text);
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+  
+  .message {
+    max-width: 90%;
+  }
+}
