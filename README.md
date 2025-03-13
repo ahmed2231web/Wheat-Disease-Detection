@@ -75,7 +75,7 @@ AgroConnect/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/AgroConnect.git
+   git clone https://github.com/ahmed2231web/AgroConnect.git
    cd AgroConnect
    ```
 
